@@ -5,15 +5,13 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{93099262-09D4-470F-8E8B-86DCACC01B5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXmlSDKUtil", "src\OpenXmlSDKUtil\OpenXmlSDKUtil.csproj", "{69C652D5-4CF0-4E57-8EA8-0C192E0F6565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenXmlSDKUtil", "src\OpenXmlSDKUtil\OpenXmlSDKUtil.csproj", "{69C652D5-4CF0-4E57-8EA8-0C192E0F6565}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0626D692-BC51-4461-8DA3-1284171BF210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "test\ConsoleApp1\ConsoleApp1.csproj", "{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}"
 EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5D5CA854-7F69-474E-BB44-7C654C483943}
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -35,8 +33,27 @@ Global
 		{69C652D5-4CF0-4E57-8EA8-0C192E0F6565}.Release|x64.Build.0 = Release|Any CPU
 		{69C652D5-4CF0-4E57-8EA8-0C192E0F6565}.Release|x86.ActiveCfg = Release|Any CPU
 		{69C652D5-4CF0-4E57-8EA8-0C192E0F6565}.Release|x86.Build.0 = Release|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Debug|x64.Build.0 = Debug|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Debug|x86.Build.0 = Debug|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Release|x64.ActiveCfg = Release|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Release|x64.Build.0 = Release|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Release|x86.ActiveCfg = Release|Any CPU
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{69C652D5-4CF0-4E57-8EA8-0C192E0F6565} = {93099262-09D4-470F-8E8B-86DCACC01B5E}
+		{4CD657AC-1E97-44F6-A70C-0C2D2E7CBCB6} = {0626D692-BC51-4461-8DA3-1284171BF210}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D5CA854-7F69-474E-BB44-7C654C483943}
 	EndGlobalSection
 EndGlobal
