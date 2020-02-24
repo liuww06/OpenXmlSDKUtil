@@ -35,6 +35,17 @@ namespace OpenXmlSDKUtil.WordProcessing
             }
             return mainPart.GetIdOfPart(imagePart);
         }
+        public static string AddCustomPart([NotNull] this WordprocessingDocument doc, string file)
+        {
+            var mainPart = doc.MainDocumentPart;
+            var myXmlPart = mainPart.AddCustomXmlPart(CustomXmlPartType.CustomXml);
+            using (FileStream stream = new FileStream(file, FileMode.Open))
+            {
+                myXmlPart.FeedData(stream);
+            }
+            return mainPart.GetIdOfPart(myXmlPart);
+        }
+
     }
 
 
