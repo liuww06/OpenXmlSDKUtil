@@ -27,13 +27,17 @@ namespace OpenXmlSDKUtil.WordProcessing
         }
         public static string AddImage([NotNull] this WordprocessingDocument doc, string imageFile)
         {
-            var mainPart = doc.MainDocumentPart;
-            var imagePart = mainPart.AddImagePart(ImagePartType.Jpeg);
             using (FileStream stream = new FileStream(imageFile, FileMode.Open))
             {
-                imagePart.FeedData(stream);
+                return doc.AddImage(stream);
             }
-            return mainPart.GetIdOfPart(imagePart);
+        }
+        public static string AddImage([NotNull] this WordprocessingDocument doc,Stream stream)
+        {
+            var mainPart = doc.MainDocumentPart;
+            var imagePart = mainPart.AddImagePart(ImagePartType.Jpeg);
+            imagePart.FeedData(stream);
+            return imagePart.GetIdOfPart(imagePart);
         }
         public static string AddCustomPart([NotNull] this WordprocessingDocument doc, string file)
         {

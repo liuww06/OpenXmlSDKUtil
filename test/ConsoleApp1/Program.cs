@@ -18,7 +18,7 @@ namespace ConsoleApp1
 
         private static void ProcessWord()
         {
-            var file = @"E:\GitHub\OpenXmlSDKUtil\test\ConsoleApp1\test.docx";
+            var file = @"test.docx";
             using (WordprocessingDocument doc = WordprocessingDocument.Open(file, true))
             {
                 var body = doc.MainDocumentPart.Document.Body;
@@ -42,7 +42,7 @@ namespace ConsoleApp1
                 var pic = cell.Descendants<PIC.Picture>().FirstOrDefault();
                 if(pic!=null)
                 {
-                    var imageFile = @"E:\GitHub\OpenXmlSDKUtil\test\ConsoleApp1\tmp.jpg";
+                    var imageFile = @"tmp.jpg";
                     var relationshipId = doc.AddImage(imageFile);
                     pic.BlipFill.Blip.Embed.Value = relationshipId;
                 }
